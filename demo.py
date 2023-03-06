@@ -1,10 +1,12 @@
-'''
-Demo code for the paper
-
-Choy et al., 3D-R2N2: A Unified Approach for Single and Multi-view 3D Object
-Reconstruction, ECCV 2016
-'''
 import os
+os.environ['THEANO_FLAGS'] = 'optimizer=None'
+# os.environ['THEANO_FLAGS'] = 'traceback.limit=1'
+# os.environ['THEANO_FLAGS'] = 'device=cuda'
+# os.environ['THEANO_FLAGS'] = 'floatX=float32'
+
+# os.environ['THEANO_HINTS'] = 'exception_verbosity=high'
+
+# os.environ['THEANO_FLAGS'] = 'exception_verbosity=high'
 import sys
 if (sys.version_info < (3, 0)):
     raise Exception("Please follow the installation instruction on 'https://github.com/chrischoy/3D-R2N2'")

@@ -1,3 +1,4 @@
 [global]
 floatX = float32
-device = cuda
+device = gpu
+optimizer=None
